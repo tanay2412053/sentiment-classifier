@@ -1,14 +1,16 @@
 # sentiment-classifier  
 
 A simple sentiment analysis tool built with **Python, scikit-learn, and TF-IDF**.  
-It classifies text reviews into **positive, negative, or neutral** sentiments.  
+A simple Python script that demonstrates how to perform sentiment analysis on movie reviews using machine learning.  
+The model classifies reviews as **positive**, **negative**, or **neutral**. 
 
 
-## 🚀 Features
-- Preprocesses raw text using **TF-IDF Vectorization**  
-- Trains a **Logistic Regression** model  
-- Predicts sentiment of new text inputs  
-- Easy to run from the command line  
+## ⚙️ How It Works
+The script uses two components from the **scikit-learn** library:
+
+- **TF-IDF Vectorizer**: Converts raw text into numerical features.  
+- **Logistic Regression**: A classification algorithm trained to predict sentiment.
+
 
 
 ## 📂 Project Structure
@@ -21,7 +23,7 @@ sentiment-classifier/
 ## ⚙️ Installation
 
 1. Clone the repository:
-   ```bash
+
    git clone https://github.com/your-username/sentiment-classifier.git
    cd sentiment-classifier
 
@@ -40,11 +42,10 @@ pip install -r requirements.txt
 Run the script with:
 python sentiment.py
 
-
-#Example output:
-Accuracy: 0.90
-Review: "Amazing movie with great storyline!" → Sentiment: Positive
-Review: "Terrible film, waste of time." → Sentiment: Negative
+Enter movie name: The Great Film
+Enter your review for 'The Great Film': A truly fantastic and memorable experience.
+Movie: The Great Film
+Predicted Sentiment: Positive (score: 0.85)
 
 
 🛠 Tech Stack
@@ -54,13 +55,6 @@ Review: "Terrible film, waste of time." → Sentiment: Negative
 -numpy
 
 
-
-
-
-
-
-
-
-
-
-
+⚠️ Limitations-
+Small Training Data: The model is trained on only five example sentences.
+I have maded a Simple Model: For real-world accuracy, you’ll need larger datasets and more advanced models.
